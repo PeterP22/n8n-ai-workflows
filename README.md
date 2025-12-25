@@ -1,5 +1,7 @@
 # SeedDream 4.5 Image Generator
 
+![n8n Workflow](n8n_workflow.png)
+
 An n8n workflow that generates AI images using ByteDance's SeedDream 4.5 model via the Replicate API.
 
 ## What Was Built

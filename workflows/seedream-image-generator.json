@@ -185,7 +185,7 @@
       "id": "respond-success",
       "name": "Return Generated Image",
       "type": "n8n-nodes-base.form",
-      "typeVersion": 2.2,
+      "typeVersion": 1,
       "position": [1100, -100]
     },
     {
@@ -199,7 +199,7 @@
       "id": "respond-error",
       "name": "Return Error",
       "type": "n8n-nodes-base.form",
-      "typeVersion": 2.2,
+      "typeVersion": 1,
       "position": [1100, 400]
     }
   ],
