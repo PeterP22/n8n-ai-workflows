@@ -6,8 +6,8 @@ A curated collection of n8n automation workflows for AI-powered tasks. All workf
 
 | Workflow | Description | Stack | Docs |
 |----------|-------------|-------|------|
-| **SeedDream Image Generator** | Generate AI images via Replicate API, delivered to Telegram | Replicate, Telegram | [README](README-seedream.md) |
-| **AI Research Digest** | Daily aggregation of AI/ML news from arXiv, HN, HuggingFace, Reddit | Ollama, Telegram | [README](README-ai-research-digest.md) |
+| **SeedDream Image Generator** | Generate AI images via Replicate API, delivered to Telegram | Replicate, Telegram | [README](seedream-image-generator/README.md) |
+| **AI Research Digest** | Daily aggregation of AI/ML news from arXiv, HN, HuggingFace, Reddit | Ollama, Telegram | [README](ai-research-digest/README.md) |
 
 ## Tech Stack
 
@@ -41,30 +41,31 @@ open http://localhost:5678
 
 1. Open n8n at `http://localhost:5678`
 2. Go to **Workflows** → **Import from File**
-3. Select workflow JSON from `workflows/` folder
-4. Configure credentials as needed (see individual README)
+3. Select `workflow.json` from any workflow folder
+4. Configure credentials as needed (see workflow's README)
 
 ## Repository Structure
 
 ```
 .
-├── workflows/
-│   ├── seedream-image-generator.json
-│   └── ai-research-digest.json
 ├── README.md                        # This file (index)
-├── README-seedream.md               # SeedDream workflow docs
-├── README-ai-research-digest.md     # AI Digest workflow docs
-├── seedream-image-generator-workflow.png
-└── ai-research-digest-workflow.png
+├── seedream-image-generator/
+│   ├── README.md                    # SeedDream docs
+│   ├── workflow.json                # n8n workflow
+│   └── workflow.png                 # Workflow diagram
+└── ai-research-digest/
+    ├── README.md                    # AI Digest docs
+    ├── workflow.json                # n8n workflow
+    └── workflow.png                 # Workflow diagram
 ```
 
 ## Adding New Workflows
 
-1. Export workflow JSON from n8n
-2. Save to `workflows/` folder
-3. Create `README-{workflow-name}.md` with documentation
-4. Add entry to the Workflows table above
-5. Optional: Add workflow diagram PNG
+1. Create folder: `{workflow-name}/`
+2. Export workflow JSON from n8n → `{workflow-name}/workflow.json`
+3. Create `{workflow-name}/README.md` with documentation
+4. Add workflow diagram → `{workflow-name}/workflow.png`
+5. Add entry to the Workflows table above
 
 ## Philosophy
 

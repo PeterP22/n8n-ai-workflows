@@ -1,6 +1,6 @@
 # AI Research Digest
 
-![n8n Workflow](ai-research-digest-workflow.png)
+![n8n Workflow](workflow.png)
 
 An n8n workflow that aggregates the latest AI/ML news, papers, and discussions from multiple sources, then delivers a curated daily digest to Telegram.
 

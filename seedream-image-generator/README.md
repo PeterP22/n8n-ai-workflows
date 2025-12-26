@@ -1,6 +1,6 @@
 # SeedDream 4.5 Image Generator
 
-![n8n Workflow](seedream-image-generator-workflow.png)
+![n8n Workflow](workflow.png)
 
 An n8n workflow that generates AI images using ByteDance's SeedDream 4.5 model via the Replicate API, with automatic delivery to Telegram.
 
